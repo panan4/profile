@@ -1,0 +1,129 @@
+/* ------------------------------------------------------- */
+body * {
+  font-size: 0.75rem;
+}
+
+.popup {
+  background-color: #eee;
+}
+.popup h2 {
+  text-align: center;
+  padding: 10px 0;
+}
+
+header {
+  text-align: center;
+}
+header .top a { /* background-color: #aaa; */ }
+header .top a #logo {
+  margin: 50px 0 20px 0;
+}
+header .top ul {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+  align-content: center;
+}
+header .top ul li {
+  margin-right: 25px;
+}
+header .top ul li a {
+  padding: 10px 7px;
+  display: block;
+  position: relative;
+}
+header .top ul li a span {
+  position: absolute;
+  border: 1px solid #ff7f50;
+  display: block;
+  top: 30px;
+  right: -55%;
+  border-radius: 10px;
+  padding: 3px 5px;
+  font-size: 0.84rem;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+header .top ul li:first-child {
+  margin-right: 30px;
+  position: relative;
+}
+header .top ul li:first-child > a::after {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background: url(../images/arr.png) no-repeat;
+  margin-left: 5px;
+  position: absolute;
+  top: 15px;
+}
+header .top ul .lang {
+  background: #fff;
+  display: block;
+  position: absolute;
+  left: -20px;
+  border: 1px solid #aaa;
+  z-index: 500;
+}
+header .top ul .lang a {
+  font-size: 0.75rem;
+}
+header .top .all_nav {
+  display: block;
+  background-color: #fff;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  width: 700px;
+  height: 500px;
+  z-index: 900;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  line-height: 500px;
+  border: 1px solid #ff7f50;
+}
+header .top .all_nav .close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-weight: 700;
+  padding: 10px;
+  font-size: 1.5rem;
+}
+header .btm nav {
+  width: 1000px;
+  margin: 10px auto;
+}
+header .btm nav ul {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-content: center; /* background-color: #ff7f50;  */
+}
+header .btm nav ul li {
+  position: relative;
+}
+header .btm nav ul li > a {
+  display: block;
+  text-transform: uppercase;
+  padding: 15px;
+  font-weight: 700;
+}
+header .btm nav ul li > a:hover {
+  color: #ff7f50;
+}
+header .btm nav ul li .sub {
+  display: block;
+  position: absolute;
+  z-index: 300;
+  top: 100%;
+  background: #fff;
+  width: 100%;
+  border: 1px solid #aaa;
+}
+header .btm nav ul li .sub li a {
+  padding: 10px;
+  display: block;
+}/*# sourceMappingURL=main.css.map */

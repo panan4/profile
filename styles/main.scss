@@ -1,0 +1,76 @@
+$bgcolor1:#ff7f50;
+$fontcolor1:#222;
+$bgcolor2:#eee;
+$best:#ffe4c4;
+$order:#000080;
+$fontcolor2:#aaa;
+$wh:#fff;
+/* ------------------------------------------------------- */
+body * {font-size: 0.75rem;}
+.popup {
+    background-color: $bgcolor2;
+    h2 {
+        text-align: center; padding: 10px 0;
+    }
+}
+header {text-align: center;
+    .top {
+        a{/* background-color: #aaa; */
+            #logo {
+                margin: 50px 0 20px 0;
+            }
+        }
+        ul {display: flex; flex-flow: row nowrap; justify-content:flex-end;
+            align-content: center;
+            li {margin-right: 25px;
+                a {padding: 10px 7px; display: block; position: relative; 
+                    img {
+
+                    }
+                    span {
+                        position: absolute; border: 1px solid $bgcolor1; display: block;
+                        top: 30px; right: -55%; border-radius: 10px; padding: 3px 5px;
+                        font-size: 0.84rem; width: max-content;
+                    }
+                }
+            }
+            li:first-child {margin-right: 30px; position: relative;
+                > a::after {
+                    content: ''; display: inline-block; width: 10px; height: 10px; background:url(../images/arr.png) no-repeat; margin-left: 5px; position: absolute; top: 15px;
+                }
+            }
+            .lang {background: $wh; display: block; position: absolute; left: -20px; border: 1px solid $fontcolor2; z-index: 500;
+                a {font-size: 0.75rem;}
+            }
+        }
+        .all_nav { display: block; background-color: $wh; position: fixed; left: 50%; top: 50%;
+            width: 700px; height: 500px; z-index: 900; transform: translate(-50%,-50%); text-align: center; line-height: 500px; border: 1px solid $bgcolor1;
+            a {}
+            .close {
+                position: absolute; top: 20px; right: 20px; font-weight: 700; padding: 10px;
+                font-size: 1.5rem;
+            }
+        }
+    }
+    .btm {
+        nav {width: 1000px; margin: 10px auto;
+            ul {display: flex; flex-flow: row wrap; justify-content:space-between;
+                align-content: center; /* background-color: #ff7f50;  */
+                li {position: relative;
+                    > a{display: block;
+                        text-transform: uppercase; padding: 15px; font-weight: 700;
+                    }
+                    > a:hover {color: $bgcolor1;}
+                    .sub {display: block; position: absolute; z-index: 300; top: 100%;
+                        background: #fff; width: 100%; border: 1px solid $fontcolor2;
+                        li {
+                            a {
+                                padding: 10px; display: block;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
