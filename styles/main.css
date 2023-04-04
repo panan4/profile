@@ -126,4 +126,104 @@ header .btm nav ul li .sub {
 header .btm nav ul li .sub li a {
   padding: 10px;
   display: block;
+}
+
+main .right_popup {
+  position: fixed;
+  top: 0;
+  right: 0;
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+}
+main .right_popup #left_btn {
+  width: 30px;
+  border-bottom: 1px solid #444;
+  display: flex;
+  flex-flow: column;
+}
+main .right_popup #left_btn a:first-child {
+  background: #ff7f50;
+}
+main .right_popup #left_btn a:nth-of-type(2) {
+  padding-top: 4px;
+}
+main .right_popup #left_btn a:nth-of-type(3) {
+  padding-top: 4px;
+}
+main .right_popup #left_btn a {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  border: 1px solid #444;
+  background-color: #fff;
+}
+main .right_popup .contents {
+  background: #fff;
+  width: 500px;
+  border: 1px solid #333;
+  height: 100vh;
+}
+main .right_popup .contents h1 {
+  text-align: center;
+  margin-top: 30px;
+}
+main .right_popup .contents p:nth-of-type(1) {
+  text-align: center;
+  margin: 30px 0;
+  font-size: 1rem;
+  color: #aaa;
+}
+main .right_popup .contents .topmenu {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+main .right_popup .contents .topmenu a {
+  width: 45%;
+  border-bottom: 1px solid #222;
+  font-size: 1rem;
+  padding-bottom: 7px;
+  text-transform: uppercase;
+}
+main .right_popup .contents .topmenu a span {
+  font-size: 1rem;
+  color: #ff7f50;
+}
+main .right_popup .contents .btmmenu {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin: 30px 0;
+}
+main .right_popup .contents .btmmenu a {
+  width: 45%;
+  border-bottom: 1px solid #222;
+  font-size: 1rem;
+  padding-bottom: 7px;
+  text-transform: uppercase;
+}
+main .right_popup h2 {
+  font-size: 1rem;
+  margin: 20px 0 20px 15px;
+  font-weight: 700;
+}
+main .right_popup .view {
+  width: 150px;
+  margin-left: 15px;
+}
+main .right_popup .view img {
+  width: 100%;
+}
+main .right_popup p:last-child { /* width: 150px; */
+  margin: 30px 0 30px 15px;
+  font-size: 1rem;
+}
+main .right_popup address {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-left: 15px;
 }/*# sourceMappingURL=main.css.map */
