@@ -1,0 +1,37 @@
+/* ------------------------------------------------------- */
+main {
+  width: 1300px;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+main .container p {
+  width: 50%;
+}
+main .container p img {
+  width: 100%;
+}
+main aside h1 {
+  margin: 20px 0;
+}
+main aside dl {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+main aside dl dd span {
+  text-decoration: line-through;
+  color: #aaa;
+}
+main aside .item {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+main aside .btmB {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}/*# sourceMappingURL=sub.css.map */

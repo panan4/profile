@@ -13,7 +13,8 @@ const nav_acc_sub = document.querySelectorAll('.btm>nav>ul>li>.sub')
 const asideOpenBtn = document.querySelector('main>.right_popup>#left_btn>a:first-child')
 const asideTap = document.querySelector('main>.right_popup>.contents')
 const aside = document.querySelector('main>.right_popup')
-
+//6. 변수
+let krlang = true
 console.log(kr_lnb, kr_lnb_open)
 console.log(all_nav, all_nav_open, all_nav_close)
 console.log(nav_acc, nav_acc_sub)
@@ -47,16 +48,25 @@ nav_acc[11].addEventListener('mouseout', function(){
 
 //4. lang 실행과 종료
 kr_lnb.addEventListener('click', function(){
+    if(krlang){
+        kr_lnb_open.style.display = 'inline-block'
+    }
+    else {
+        kr_lnb_open.style.display = 'none'
+    }
+    krlang =! krlang
+})
+/* kr_lnb.addEventListener('click', function(){
     kr_lnb_open.style.display = 'inline-block'
 })
 
 kr_lnb_open.addEventListener('click', function(){
     kr_lnb_open.style.display = 'none'
-})
+}) */
 
 //5. aside 숨겼다 펼치기
 
-aside.style.transform = 'translateX(500px)'
+/* aside.style.transform = 'translateX(500px)' */
 
 /* asideOpenBtn.addEventListener('click', function(){
     aside.style.transition = 'all 0.5s'
@@ -68,11 +78,10 @@ asideOpenBtn.addEventListener('mouseover', function(){
 }) */
 
 asideOpenBtn.addEventListener('click', function(){
-    if (aside.style.transform='translateX(500px)' == 'translateX(500px)') {
-        aside.style.transform = 'translateX(0)'
+    if (aside.classList.contains('on')){
+        aside.classList.remove('on')
     }
-    else if (aside.style.transform='translateX(0px)' == 'translateX(0px)') {
-        aside.style.transform = 'translateX(500px)'
-        console.log(this)
+    else {
+        aside.classList.add('on')
     }
 })

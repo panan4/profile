@@ -1,0 +1,49 @@
+$bgcolor1:#ff7f50;
+$fontcolor1:#222;
+$bgcolor2:#eee;
+$best:#ffe4c4;
+$order:#000080;
+$fontcolor2:#aaa;
+$wh:#fff;
+/* ------------------------------------------------------- */
+main {width: 1300px; margin: 0 auto;
+    display: flex; flex-flow: row nowrap; justify-content: space-between;
+    .container{
+        p {width: 50%;
+            img{width: 100%;}
+        }
+    }
+    aside {
+        button{}
+        h1{margin: 20px 0;}
+        dl{display: flex; flex-flow: row nowrap; justify-content: space-between;
+            margin-bottom: 20px;
+            dt{}
+            dd{
+                span{text-decoration: line-through; color: #aaa;}
+            }
+        }
+        .item{display: flex; flex-flow: row nowrap; justify-content: space-between;
+            p{}
+            select {
+                option {}
+            }
+        }
+        h3{}
+        a{}
+        .btmB{display: flex; flex-flow: row nowrap; justify-content: space-between;
+            a{}
+        }
+        .box1{
+            .box1Top{
+                p{}
+                a{}
+            }
+            p{}
+        }
+        .box2{
+            p{}
+            a{}
+        }
+    }
+}
