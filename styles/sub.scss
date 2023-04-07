@@ -5,45 +5,87 @@ $best:#ffe4c4;
 $order:#000080;
 $fontcolor2:#aaa;
 $wh:#fff;
+$order_bar:#ff69b4;
+//전체영역 1200px 주문영역380px
 /* ------------------------------------------------------- */
-main {width: 1300px; margin: 0 auto;
+main {width: 1200px; margin: 0 auto;
     display: flex; flex-flow: row nowrap; justify-content: space-between;
-    .container{
-        p {width: 50%;
+    .container{background-color: #ffe4c4; width: calc(100% - 380px);
+        p {width: 100%;
             img{width: 100%;}
         }
+        h2 {text-align: center; padding: 40px 0;}
+        .ai {display: flex; flex-flow: row nowrap; justify-content: space-between;
+            a{width: 31%;
+                p{
+                    img{}
+                }
+                h3 {font-size: 0.8rem; padding: 10px 0;}
+                p{padding: 0 0 25px;
+                    em{font-weight: 700;}
+                }
+            }
+        }
+        .cate {
+            a {
+                em{}
+            }
+        }
     }
-    aside {
+    aside {width: 380px; height: 100vh;
+        position: sticky; top: 0; padding: 20px;
         button{}
-        h1{margin: 20px 0;}
+        h1{padding: 20px 0; font-weight: 700; font-size: 1.25rem;}
         dl{display: flex; flex-flow: row nowrap; justify-content: space-between;
-            margin-bottom: 20px;
-            dt{}
-            dd{
+            dt{width: 30%; padding: 15px 0;}
+            dd{width: 70%; text-align: right; padding: 15px 0;
                 span{text-decoration: line-through; color: #aaa;}
             }
         }
+        .item1 {margin-top: 10px;}
         .item{display: flex; flex-flow: row nowrap; justify-content: space-between;
-            p{}
-            select {
-                option {}
+            p{width: 30%;}
+            select {width: 70%; padding: 10px 15px; margin: 5px 0;
+                border: 1px solid #ddd;
+                option {width: 100%;}
             }
         }
-        h3{}
-        a{}
+        .item3 {
+            margin-bottom: 20px;
+        }
+        .total{display: flex; flex-flow: row nowrap; justify-content: space-between;
+            border-top: 1px solid #aaa;
+            p {padding: 20px 0; font-size: 1.5rem; color: coral;}
+        }
+        > a{border: 1px solid #ff7f50; background-color: #ff7f50;width: 100%;
+            padding: 25px 0; display: block; text-align: center; margin: 0 0 10px;
+            color: #fff;
+        }
         .btmB{display: flex; flex-flow: row nowrap; justify-content: space-between;
-            a{}
+            a{background: #fff; width: 47%; padding: 15px 0; text-align: center;
+                border: 1px solid #ff7f50; color: #ff7f50;}
+            a:last-child {color: black;}
         }
         .box1{
-            .box1Top{
-                p{}
+            border: 1px dashed #aaa; padding: 20px; margin: 20px 0;
+            .box1Top{display: flex; flex-flow: row nowrap; justify-content: space-between;
+                p{font-size: 0.75rem; color: #aaa;}
                 a{}
             }
-            p{}
+            p{margin: 10px 0;
+                span{font-weight: 700; font-size: 1.1rem;}
+            }
+            p:last-child{height: 10px; width: 100%; background: #eee;
+                span {padding: 5px 0; width: 65%; background: #ff69b4; display: block;}
+            }
         }
-        .box2{
+        .box2{display: flex; flex-flow: row nowrap; justify-content: space-between;
+            align-items: center;
             p{}
-            a{}
+            a{border: 1px solid black; padding: 5px 10px;}
         }
     }
+}
+footer {width: 1200px; margin: 0 auto;
+        
 }

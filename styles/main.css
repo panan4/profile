@@ -137,9 +137,6 @@ main .right_popup {
   align-items: center;
   transform: translateX(500px);
 }
-main .right_popup.on {
-  transform: translateX(0);
-}
 main .right_popup #left_btn {
   width: 30px;
   border-bottom: 1px solid #444;

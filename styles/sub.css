@@ -1,37 +1,178 @@
 /* ------------------------------------------------------- */
 main {
-  width: 1300px;
+  width: 1200px;
   margin: 0 auto;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
 }
+main .container {
+  background-color: #ffe4c4;
+  width: calc(100% - 380px);
+}
 main .container p {
-  width: 50%;
+  width: 100%;
 }
 main .container p img {
   width: 100%;
 }
+main .container h2 {
+  text-align: center;
+  padding: 40px 0;
+}
+main .container .ai {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+main .container .ai a {
+  width: 31%;
+}
+main .container .ai a h3 {
+  font-size: 0.8rem;
+  padding: 10px 0;
+}
+main .container .ai a p {
+  padding: 0 0 25px;
+}
+main .container .ai a p em {
+  font-weight: 700;
+}
+main aside {
+  width: 380px;
+  height: 100vh;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  padding: 20px;
+}
 main aside h1 {
-  margin: 20px 0;
+  padding: 20px 0;
+  font-weight: 700;
+  font-size: 1.25rem;
 }
 main aside dl {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
-  margin-bottom: 20px;
+}
+main aside dl dt {
+  width: 30%;
+  padding: 15px 0;
+}
+main aside dl dd {
+  width: 70%;
+  text-align: right;
+  padding: 15px 0;
 }
 main aside dl dd span {
   text-decoration: line-through;
   color: #aaa;
+}
+main aside .item1 {
+  margin-top: 10px;
 }
 main aside .item {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
 }
+main aside .item p {
+  width: 30%;
+}
+main aside .item select {
+  width: 70%;
+  padding: 10px 15px;
+  margin: 5px 0;
+  border: 1px solid #ddd;
+}
+main aside .item select option {
+  width: 100%;
+}
+main aside .item3 {
+  margin-bottom: 20px;
+}
+main aside .total {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  border-top: 1px solid #aaa;
+}
+main aside .total p {
+  padding: 20px 0;
+  font-size: 1.5rem;
+  color: coral;
+}
+main aside > a {
+  border: 1px solid #ff7f50;
+  background-color: #ff7f50;
+  width: 100%;
+  padding: 25px 0;
+  display: block;
+  text-align: center;
+  margin: 0 0 10px;
+  color: #fff;
+}
 main aside .btmB {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
+}
+main aside .btmB a {
+  background: #fff;
+  width: 47%;
+  padding: 15px 0;
+  text-align: center;
+  border: 1px solid #ff7f50;
+  color: #ff7f50;
+}
+main aside .btmB a:last-child {
+  color: black;
+}
+main aside .box1 {
+  border: 1px dashed #aaa;
+  padding: 20px;
+  margin: 20px 0;
+}
+main aside .box1 .box1Top {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+main aside .box1 .box1Top p {
+  font-size: 0.75rem;
+  color: #aaa;
+}
+main aside .box1 p {
+  margin: 10px 0;
+}
+main aside .box1 p span {
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+main aside .box1 p:last-child {
+  height: 10px;
+  width: 100%;
+  background: #eee;
+}
+main aside .box1 p:last-child span {
+  padding: 5px 0;
+  width: 65%;
+  background: #ff69b4;
+  display: block;
+}
+main aside .box2 {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+main aside .box2 a {
+  border: 1px solid black;
+  padding: 5px 10px;
+}
+
+footer {
+  width: 1200px;
+  margin: 0 auto;
 }/*# sourceMappingURL=sub.css.map */
